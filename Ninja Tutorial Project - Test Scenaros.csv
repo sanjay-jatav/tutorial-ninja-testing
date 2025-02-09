@@ -1,0 +1,20 @@
+Project Name,Tutorials Ninja,Qafox.com,
+Client ,Tutorials Ninja,,
+Creation By,Sanjay Jatav,,
+Creation Date,6-Feb-2025,,
+Approval By, Shiva Kumar,,
+Approval Date,-,,
+,,,
+Test Scenario ID,Test Scenario Description,Priority,Number of Test Cases
+TS_001,Verify that the search bar is visible ,P0,5
+TS_002,Verify that the user can enter and clear text in the search field.,P0,5
+TS_003,Verify that the search results display relevant data when valid keywords are entered.,P0,5
+TS_004,"Verify that an appropriate message is displayed for invalid or non-existent searches. (""No results found"").",P0,5
+TS_005,"Verify that the search supports case-insensitive queries (like ""laptop"" and ""LAPTOP"")",P0,5
+TS_006,Verify the search behavior when entering partial keywords.,P1,5
+TS_007,Verify the search functionality on different browsers,P0,4
+TS_008, Verify that the Contact Us page is accessible from the website menu or footer.,P0,6
+TS_009,Validate that all mandatory fields are present and properly labeled.,P0,8
+TS_010,Validate the form submission with missing mandatory fields and verify that relevant error messages are displayed.,P0,
+TS_011,Validate that users receive a confirmation email upon submitting the form.,P1,
+TS_012,"Validate the form submission across different browsers, devices and network conditions.",P0,
