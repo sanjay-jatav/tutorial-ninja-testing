@@ -1,0 +1,301 @@
+ ,Test Scenario ,TC_ID, Test Case,Prequisites,Test Steps,Test Data,Expected Result,Actual Result,Priority,Result,Comments
+TS_001,Verify that the search bar is visible ,TC_001,Verify that the search bar is displayed on the homepage.,"1. Good internet connection
+
+2. Open browser.
+
+3. Enter link :https://tutorialsninja.com/demo/
+
+4. The user is on the homepage.","1. Click on the link in the prerequisites.
+
+2. Go to the homepage.
+
+3.  Check if the search bar is visible.",NA,The search bar should be clearly visible on the homepage.,The search bar is clearly visible on the homepage.,P0,PASS,
+,,TC_002,To verify that the search bar is displayed on all pages where search functionality is required.," 1. Good internet connection
+
+2. The user is on the homepage.
+
+3. the user is navigating through the website.","1. The user is on the homepage.
+
+2. Open different pages (e.g. Products, Wishlist, checkout etc.)
+
+3. check if the search bar is visible on each page.",NA,The search bar should be present on all relevant pages.,The search bar is visible on all relevant pages,P0,PASS,
+,,TC_003,To verify that the search bar remains visible on different screen sizes., The website is accessed on different devices.,"1. Open the website on desktop, tablet and mobile.
+
+2. Check if the search bar is visible without overlapping or hiding.",NA,The search bar should be properly visible and accessible on all devices.,The search bar is properly visible and accessible on all devices.,P0,PASS,
+,,TC_004,To verify that the search bar remains visible after scrolling.,"1. click on link https://tutorialsninja.com/demo
+
+2. Open the website.","1. Go to the homepage.
+
+2. Scroll down the webpage.
+
+3. Scroll back up.
+
+4. Observe the search bar visible.",NA,The search bar should still be visible,The search bar is still visible.,P0,FAIL,Search bar is not visible after scrolling. It should stay visible or reappear when scrolling back up. Need to fix this issue.
+,,TC_005,To verify the visibility of the search bar in different browsers.,"1.Need different browser(like firefox, chrome
+
+2. enter this link on the browser: https://tutorialsninja.com/demo","1. Open the website in Chrome, Firebox, Edge etc.
+
+2. check if the search bar is visible and properly displayed.",NA,The search bar should be visible on all supported browsers.,The search bar is visible on all supported browsers.,P0,PASS,
+TS_002,Verify that the user can enter and clear text in the search field.,TC_006,To verify that the user can enter text into the search field.,"1. click on link: https://tutorialsninja.com/demo
+
+2. Open the website.
+
+","1. Click on the search field.
+
+2. Enter in the search field from test data.","""laptop""","The text ""laptop"" should be entered and displayed in the search field.","The text ""laptop"" is entered and displayed in the search field.",P0,PASS,
+,,TC_007,To verify that the user can enter numeric values into the search field.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+","1. Find search button on header.
+
+2. Click on the search field.
+
+3. Enter values in the search field from test data.","""12345""",The text should be entered and displayed in the search field.,The text is entered and displayed in the search field.,P1,PASS,
+,,TC_008,To verify that the user can delete text using the backspace key.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+","1. Find the search bar in the header
+
+2. Press on the search bar.
+
+3. Enter test data in the field.
+
+4. Press the backspace key until the text is deleted.","""iphone""",The text should be deleted the character by the character.,The text is deleted the character by the character,P0,PASS,
+,,TC_009,To verify that the placeholder text reappears after clearing the search field.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+","1. Find the search bar in the header
+
+2. Press on the search bar.
+
+3. Enter test data in the field.
+
+4. Press the backspace key until the text is deleted.","""laptop""",The placeholder text should reappear in the search field.,The placeholder text is reappear in the search field.,P1,PASS,
+,,TC_010,"To verify that the user can enter and clear text on different devices (mobile, tablet, desktop)."," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+","1. Find the search bar in the header.
+
+2. Enter text in the search field on different devices(like mobile, tablet, pc)
+
+3. Clear the text using the backspace key.","""Mobile""",The text should be entered and cleared correctly across all devices.,The text is entered and cleared correctly across all devices.,P0,PASS,
+TS_003,Verify that the search results display relevant data when valid keywords are entered.,TC_011,To verify that relevant search results are displayed for a valid keyword.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search index is updated with valid test data.","1. Find the search bar.
+
+2. Enter test data in the search field.
+
+3. Click search button or press enter key.
+
+4.Observe relevant result is displaying.","""macbook""",The search should return results related to test data.,The search returns results related to test data.,P0,PASS,
+,,TC_012,To verify that the search supports partial keywords," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+","1. Find the search bar.
+
+2. Enter test data in the search field.
+
+3. Click on the enter button.","""mac""","The results should include relevant items like ""macbook, macbook air, macbook pro, etc.",The search returns results related to test data,P0,PASS,
+,,TC_013,To verify that the search is case-insensitive," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar accepts text in the input field","1. Go to the search bar.
+
+2. Enter the first small case test data.
+
+3. Observe the result.
+
+4. Enter the capital case test data.
+
+5. Observe the result same.","1. ""macbook""
+
+2. ""MACBOOK""",Both searches should return identical results.,Both searches return the same result.,P0,PASS,
+,,TC_014,To verify that text with numeric values return relevant results," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar accepts text in the input field","1. Go to the search bar.
+
+2. Enter test data in the search input field.
+
+3. Observe the result.","""apple cinema 30""",The search result returns the relevant output,The search returns the relevant result,P0,PASS,
+,,TC_015,To verify that the search results do not display irrelevant data," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar accepts text in the input field","1. Find the search bar in the header.
+
+2. Enter text from test data in the input field.
+
+3. check if non-related items appear.","""laptop""",Irrelevant results should not be displayed.,Irrelevant results are not displayed.,P0,PASS,
+TS_004,"Verify that an appropriate message is displayed for invalid or non-existent searches. (""No results found"").",TC_016,To verify that an appropriate message is displayed for a valid but non-existent keyword.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar accepts text in the input field","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+
+4. Observe the displayed message","""vivo mobile""",The product should not match the search criteria.,There is no product that match the search result.,P0,PASS,
+,,TC_017,"To verify that ""No results found"" is displayed for a completely random search."," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar accepts text in the input field","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+
+4. Observe the displayed message","""sdfghjkllkjhgfds""","The ""No results found"" message should be displayed.",There is no product that match the search result.,P0,PASS,
+,,TC_018,"To verify that ""No results found"" is displayed when searching for an item with special characters."," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar accepts text in the input field","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+
+4. Observe the displayed message","""@#$%^""","The ""No results found"" message should be displayed.",There is no product that match the search result.,P1,PASS,
+,,TC_019,To verify that an invalid search does not cayse performance issues or crashes.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar accepts text in the input field","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+
+4. Observe the displayed message","""macbook@#$1234""",The system should not crash or slow down.,The system does not crash or slow down and show there is no product that match the search result.,P0,PASS,
+,,TC_020,"To verify that ""No results found"" message is displayed on different devices (mobile, tablet, desktop)."," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar accepts text in the input field","1. Perform a valid search on different devices that do not exit the website. (like mobile, tablet, desktop).","""vivo mobile""",The message should be properly displayed on all screen sizes or devices.,There is no product that match the search result.,P1,PASS,
+TS_005,"Verify that the search supports case-insensitive queries (like ""laptop"" and ""LAPTOP"")",TC_021,To verify that the search with lowercase returns correct results.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar is enabled","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+
+","""macbook""",The relevant results should be displayed.,The relevant results are displayed.,P0,PASS,
+,,TC_022,To verify that searching with uppercase returns the same results as lowercase.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar is enabled","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+
+","""MACBOOK""","The same result should be displayed as for ""macbook""","The same result is displayed as for ""macbook""",P0,PASS,
+,,TC_023,To verify that searching with mixed-case letters returns the same results.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar is enabled","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+
+","""MacBook""","The same result should be displayed as for ""macbook""","The same result is displayed as for ""macbook""",P0,PASS,
+,,TC_024,To verify that searching with a combination of upper and lowercase letters in a multi-word query works correctly.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar is enabled","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+
+","""MACBOOK pro""","The same result should be displayed as for ""macbook pro""","The same result is displayed as for ""macbook pro""",P1,PASS,
+,,TC_025,"To verify that case insensitivity applies to product names, categories, and description."," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar is enabled","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+
+4. compare resutls.","""PHONE""
+
+""Phone""","The same result should be displayed as for ""phone""", Results should be identical.,P0,PASS,
+TS_006,Verify the search behavior when entering partial keywords.,TC_026,To verify that entering the first few characters of a keyword displays relevant suggestions.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar is enabled","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+
+4. Observe autocomplete suggestions.","""mac""","Suggestions should include relevant results like ""macbook"", ""mackbook pro"", etc",suggestions are not provided.,P0,FAIL,
+,,TC_027,To verify that partial keyword searches return all matching results.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar is enabled","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+","""mac""","The results should include all items containing ""mac"", like ""macbook"", "" macbook pro"", etc.","The search displays all results as ""mackbook""",P0,PASS,
+,,TC_028,To verify that entering a partial keyword at the end of a word still returns relevant results.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar is enabled","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+","""book""","The results should contain include ""macbook"", etc.","The result contains include ""macbook"", etc.",P1,PASS,
+,,TC_029,To Verify that searching for a partial keyword in the middle of a word still returns relevant results.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar is enabled","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+","""cboo""","The results should contain include ""macbook"", etc.","The result contains include ""macbook"", etc.",P1,PASS,
+,,TC_030,To Verify that partial keyword searches work for multi-word queries.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website.
+
+3. The search bar is enabled","1. Find the search bar in the header.
+
+2. Enter text from the test data.
+
+3. Press the enter key.
+","""canon eo""","The results should contain include ""canon eos 5d"", etc.","The result contains include ""macbook"", etc.",P0,PASS,
+TS_007,Verify the search functionality on different browsers,TC_031,To verify that the search functionality works correctly on Google Chrome.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website on google chrome.","1. Open the website in Chrome.
+
+2. Enter text from test data in the search bar
+.
+3. Press Enter.","""macbook""",The relevant search results should be displayed.,The relevant results are displayed.,P0,PASS,
+,,TC_032,To verify that the search functionality works correctly on Mozilla Firefox.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website on Mozilla Firefox.","1. Open the website in Chrome.
+
+2. Enter text from test data in the search bar
+.
+3. Press Enter.","""macbook""",The relevant search results should be displayed.,The relevant results are displayed.,P0,PASS,
+,,TC_033,To verify that the search functionality works correctly on Microsoft Edge.," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website on Microsoft Edge.","1. Open the website in Chrome.
+
+2. Enter text from test data in the search bar
+.
+3. Press Enter.","""macbook""",The relevant search results should be displayed.,The relevant results are displayed.,P0,PASS,
+,,TC_034,"To Verify that the search functionality works correctly on mobile browsers (like chrome, etc.)"," 1. click on link: https://tutorialsninja.com/demo 
+2. Open the website on mobile browser. (like chrome).","1. Open the website in Chrome.
+
+2. Enter text from test data in the search bar
+.
+3. Press Enter.","""macbook""",The relevant search results should be displayed.,The relevant results are displayed.,P0,PASS,
+,, ,,,,,,,,,
+,, ,,,,,,,,,
+,, ,,,,,,,,,
+,, ,,,,,,,,,
+,, ,,,,,,,,,
+,, ,,,,,,,,,
