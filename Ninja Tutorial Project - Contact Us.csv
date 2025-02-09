@@ -1,0 +1,238 @@
+Test Scenario ID,Test Scenario ,TC_ID, Test Case,Prequisites,Test Steps,Test Data,Expected Result,Actual Result,Priority,Result,Comments
+ TS_008, Verify that the Contact Us page is accessible from the website menu or footer.,TC_035,To verify that the Contact Us symbol is present in the website menu,"Good internet connection, browser,
+
+Open the link: https://tutorialsninja.com/demo/","1 Open the website.
+
+2. Check the top menu for the ""Contact Us"" link.",NA,"The  ""Contact Us"" symbol should be visible in the menu.","The ""Contact Us"" symbol is visible in the menu.",P0,PASS,
+,,TC_036,To verify that the Contact Us page opens from the menu,"Good internet connection, browser,
+
+Open the link: https://tutorialsninja.com/demo/","1. Open the website from the prerequisites link.
+
+2. Click on the Call symbol in the menu.
+
+3. Observe the page is open.",NA,"The ""Contact Us"" page should open.","The ""Contact Us"" page is open.",P0,PASS,
+,,TC_037,To verify that the Contact Us link is present in the website footer,"Good internet connection, browser,
+
+Open the link: https://tutorialsninja.com/demo/","1. Open the website from the prerequisite link.
+
+2. Scroll down to the footer section of the website.
+
+3. In the footer section find the Customer Service section
+
+4. Check if the ""Contact Us"" link is available.",NA,"The  ""Contact Us"" link should be visible in the footer.","The  ""Contact Us"" link is visible in the footer.",P1,PASS,
+,,TC_038,To verify that the Contact Us page opens from the footer,"Good internet connection, browser,
+
+Open the link: https://tutorialsninja.com/demo/","1. Open the website from the prerequisite link.
+
+2. Scroll down to the footer section of the website.
+
+3. In the footer section find the Customer Service section
+
+4. Click on the ""Contact Us"" link.
+
+5. Observe the ""contact us"" page is open",NA,"The  ""Contact Us"" page should open.","The  ""Contact Us"" page is open.",P0,PASS,
+,,TC_039,To verify that the Contact Us page is accessible on mobile devices,"Good internet connection, browser,
+
+Open the link: https://tutorialsninja.com/demo/","1. Open the website on a mobile device.
+
+2. Check if the ""Contact Us"" link is visible in the menu/footer.
+
+3. Click on the link to ensure the page opens properly.",NA,The page should be accessible and responsive on mobile.,The page is accessible and responsive on mobile.,P0,PASS,
+,,TC_040,To verify that the Contact Us page is accessible from different browsers,"Good internet connection, browser,
+
+Open the link: https://tutorialsninja.com/demo/","1. Open the website in different browsers (Chrome, Firefox, Edge, Safari).
+
+2. Click on the ""Contact Us"" link.",NA,The page should open correctly in all browsers.,The page is open correctly in all browsers.,P0,PASS,
+TS_009,Validate that all mandatory fields are present and properly labeled.,TC_041,To verify the presence of the Your Name field with a mandatory sign.,"Good internet connection, browser,
+
+Open the link: https://tutorialsninja.com/demo/","1.  Open the Contact Us page.
+
+2. Check if the Name field is present with a mandatory sign.",NA,The Your Name field should be visible with a mandatory sign.,The Your Name field is visible with a mandatory sign.,P0,PASS,
+,,TC_042,To verify the label of the Name field,"Good internet connection, browser,
+
+Open the link: https://tutorialsninja.com/demo/","1. Open the contact us page.
+
+2. Check the label of the Name field.",NA,"The label should correctly display ""Your Name"".","The label is correctly display ""Your Name"".",P0,PASS,
+,,TC_043,To verify the presence of the Email field with a mandatory sign.,"Good internet connection, browser,
+
+Open the link: https://tutorialsninja.com/demo/"," 1.  Open the Contact Us page.
+
+2. Check if the Email field is present.",NA,The  Email field should be visible with a mandatory sign.,The  Email field is visible with a mandatory sign.,P0,PASS,
+,,TC_044,To Verify the label of the Email field,"Good internet connection, browser,
+
+Open the link: https://tutorialsninja.com/demo/","1. Open the contact us page.
+
+2. Check the label of the Email field.",NA,"The  label should correctly display ""Email"".","The  label is correctly display ""Email"".",P0,PASS,
+,,TC_045,To Verify the presence of the Enquiry field with a mandatory sign.,"Good internet connection, browser,
+
+Open the link: https://tutorialsninja.com/demo/","1. Open the Contact Us page
+.
+2. Check if the Message text area is present.",NA,The  Message field should be visible with a mandatory sign.,The  Enquiry field is visible with a mandatory sign.,P0,PASS,
+,,TC_046,To verify the label of the Message field,"Good internet connection, browser,
+
+Open the link: https://tutorialsninja.com/demo/","1. Open the Contact Us page.
+
+2. Check the label of the Enquiry field.",NA,"The label should correctly display ""Enquiry"".","The label should correctly display ""Enquiry"".",P0,PASS,
+TS_010,Validate the form submission with missing mandatory fields and verify that relevant error messages are displayed.,TC_047,To verify form submission with all mandatory fields left blank, Login the website,"1. Open the Contact Us page.
+
+2. Leave all mandatory fields empty.
+
+3. Click the Submit button.",NA,"The form should not be submitted, and appropriate error messages should be displayed for all missing mandatory fields.","The form is not submitted, and appropriate error messages are displayed for all missing mandatory fields.",P0,PASS,
+,,TC_048,To verify form submission with only the Name field left blank, Login the website,"1. Enter valid Email and Message.
+
+2. Leave the Name field blank.
+
+3. Click the Submit button.","Email 
+""sanjayjatav7723@gmail.com""
+
+message 
+""Hello sir my name is sanjay""","The form should not be submitted, and an error message should appear for the Name field (e.g., ""Name must be between 3 to 32"").","The form is not submitted, and an error message appears for the Name field (e.g., ""Name must be between 3 to 32"").",P0,PASS,
+,,TC_049,"To verify form submission with an invalid name and valid email, the Enquiry.", Login the website,"1. Enter an invalid name.
+
+2. Enter valid email and the Enquiry.
+
+3. Click the Submit button.","Name
+""bca""
+
+email id
+""sanjayjatav7723@gamil.com""
+
+Enquiry
+""Hello sir my name is sanjay""","The form should not be submitted, and an error message should appear for the Name field (e.g., ""Enter valid name"").",The form is submitted.,P0,FAIL,
+,,TC_050,To verify form submission with only the Email field left blank, Login the website,"1. Enter valid Name and Message.
+
+2. Leave the Email field blank.
+
+3. Click the Submit button.","Name
+""sanjay""
+
+email id
+""_"" like empty
+
+Enquiry
+""Hello sir my name is sanjay""","The form should not be submitted, and an error message should appear for the Email field (e.g., ""Email is required"").","The form is not submitted, and an error message should appear for the Email field (e.g., ""E-Mail Address does not appear to be valid!"").",P0,PASS,
+,,TC_051,To verify form submission with invalid email format, Login the website,"1. Enter valid Name and Message.
+
+2. Enter an invalid email format (e.g., ""abc@xyz"" or ""abc.com"").
+
+3. Click the Submit button.","Name
+""sanjay""
+
+email id
+sanjayjatav7723@gmail
+or
+sanjayjatav7723.com
+
+
+Enquiry
+""Hello sir my name is sanjay""","The form should not be submitted, and an error message should appear for the Email field (e.g., ""Enter a valid email address"").","The form is not submitted, and an error message should appear for the Email field (e.g., ""E-Mail Address does not appear to be valid!"").",P0,PASS,
+,,TC_052,To Verify form submission with only the Message field left blank, Login the website,"1. Enter valid Name and Email.
+
+2. Leave the Message field blank.
+
+3. Click the Submit button.","Name
+""sanjay""
+
+Email
+""sanjayjatav7723@gmail.com","The form should not be submitted, and an error message should appear for the Message field (e.g., ""Message is required"").","The form is not submitted, and an error message appears for the Message field (e.g., ""Enquiry must be between 10 and 3000 characters!"").",P0,PASS,
+,,TC_053,To verify form submission with all mandatory fields filled correctly, Login the website,"1. Enter valid Name, Email and Message.
+
+2. Click the Submit button.","Name 
+""sanjay""
+
+Email
+""sanjayjatav7723@gmail.com""
+
+message
+""hello sir my name is sanjay jatav""",The form should be successfully submitted without any error messages.,The form is successfully submitted without any error messages.,P0,PASS,
+,,TC_054,To verify that error messages disappear when the user fills in the missing mandatory fields, Login the website,"1. Leave mandatory fields blank and click Submit to trigger error messages.
+
+2. Fill in the missing fields with valid data.
+
+3. Check if the error messages disappear.","Name 
+""sanjay""
+
+Email
+""sanjayjatav7723@gmail.com""
+
+message
+""hello sir my name is sanjay jatav""",Error messages should disappear once the fields are correctly filled.,Error messages is not disappear once the fields are correctly filled.,P0,FAIL,
+TS_011,Validate that users receive a confirmation email upon submitting the form.,TC_055,To verify that a confirmation email is sent after form submission," Login the website
+
+email id should log in to your device","1. Open the Contact Us page.
+
+2. Fill in all mandatory fields with valid data.
+
+3. Click the Submit button.
+
+4. Check the registered email inbox.","Name 
+""sanjay""
+
+Email
+""sanjayjatav7723@gmail.com""
+
+message
+""hello sir my name is sanjay jatav""",A  confirmation email should be received in the user’s inbox.,A  confirmation email is not received.,P0,FAIL,
+ TS_012,"Validate the form submission across different browsers, devices and network conditions.",TC_056,To verify form submission on Google Chrome,Login the website,"1. Open the Contact Us page in Google Chrome.
+
+2. Fill in all mandatory fields with valid data.
+
+3. Click the Submit button.","Name 
+""sanjay""
+
+Email
+""sanjayjatav7723@gmail.com""
+
+message
+""hello sir my name is sanjay jatav""",The form should be submitted successfully without any UI or functionality issues.,The form is submitted successfully without any UI or functionality issues.,P0,PASS,
+,,TC_057,To Verify form submission on Mozilla Firefox,Login the website,"1. Open the Contact Us page in Firefox.
+
+2. Fill in all mandatory fields with valid data.
+
+3. Click the Submit button.","Name 
+""sanjay""
+
+Email
+""sanjayjatav7723@gmail.com""
+
+message
+""hello sir my name is sanjay jatav""",The form should be submitted successfully without any UI or functionality issues.,The form is submitted successfully without any UI or functionality issues.,P0,PASS,
+,,TC_058,To verify form submission on Microsoft Edge,Login the website,"1. Open the Contact Us page in Edge.
+
+2. Fill in all mandatory fields with valid data.
+
+3. Click the Submit button.","Name 
+""sanjay""
+
+Email
+""sanjayjatav7723@gmail.com""
+
+message
+""hello sir my name is sanjay jatav""",The form should be submitted successfully without any UI or functionality issues.,The form is submitted successfully without any UI or functionality issues.,P0,PASS,
+,,TC_059,To verify form submission on a desktop/laptop,Login the website,"1. Open the Contact Us page on desktop/laptop in any browser.
+
+2. Fill in all mandatory fields with valid data.
+
+3. Click the Submit button.","Name 
+""sanjay""
+
+Email
+""sanjayjatav7723@gmail.com""
+
+message
+""hello sir my name is sanjay jatav""",The  form should work correctly on desktop/laptop.,The form is work correctly on desktop/laptop.,P0,PASS,
+,,TC_060,To Verify form submission on a tablet (Android/iPad),Login the website,"1. Open the Contact Us page on tablet in any browser.
+
+2. Fill in all mandatory fields with valid data.
+
+3. Click the Submit button.","Name 
+""sanjay""
+
+Email
+""sanjayjatav7723@gmail.com""
+
+message
+""hello sir my name is sanjay jatav""",The form should work correctly on tablets.,The form is work correctly on tablets.,P0,PASS,
+,, ,,,,,,,,,
+,, ,,,,,,,,,
+,, ,,,,,,,,,
